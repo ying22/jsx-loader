@@ -15,6 +15,8 @@ module.exports = function(source) {
   var transform = reactTools.transformWithDetails(source, {
     harmony: query.harmony,
     es6module: query.es6module,
+    nonStrictEs6module: query.nonStrictEs6module,
+    target: query.target,
     stripTypes: query.stripTypes,
     es5: query.es5,
     sourceMap: this.sourceMap
